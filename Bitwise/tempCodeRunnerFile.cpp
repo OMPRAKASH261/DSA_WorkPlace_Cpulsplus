@@ -1,0 +1,1 @@
+(x << 1 give x*2,  x<<2 give x*2**2,  x<<3 give x*2**3)

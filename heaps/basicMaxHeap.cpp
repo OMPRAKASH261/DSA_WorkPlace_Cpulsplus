@@ -1,30 +1,15 @@
 #include<iostream>
-#include<vector>
-using namespace std;
-class Solution {
-public:
-    int numRescueBoats(vector<int>& people, int limit) {
-        /**
-          * Time: O(nlogn)
-          * space: O(sort) 
-         */
-        sort(people.begin(), people.end());
-        int i = 0, j = people.size() - 1;
-        int bt = 0;
-        while(i <= j){
-            if(people[i] + people[j] <= limit){
-                bt++; // allocate a boat to the pair
-                i++;
-                j--;
-            } else {
-                bt++; // allocate a boat to the heaviest
-                j--;
-            }
-        }
-        return bt;
-    }
-};
+#include<queue>
+using namespace std; 
 
 int main(){
-    return 0;
+    priority_queue<int> pq;
+    pq.push(10);  
+    pq.push(20);
+    pq.push(25);
+    pq.push(-6);
+    pq.push(81);
+    cout<<pq.top()<<endl;  // 81
+    pq.pop();  // 81 is removed
+    cout<<pq.top()<<endl;  // 25
 }

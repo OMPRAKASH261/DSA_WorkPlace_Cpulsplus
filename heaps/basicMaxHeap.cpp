@@ -3,7 +3,7 @@
 using namespace std; 
 
 int main(){
-    priority_queue<int> pq;
+    priority_queue<int> pq; // maxheap
     pq.push(10);  
     pq.push(20);
     pq.push(25);

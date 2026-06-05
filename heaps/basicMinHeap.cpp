@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
     ll x = 10;
-    priority_queue<int, vector<int>, greater<int> > pq;
+    priority_queue<int, vector<int>, greater<int> > pq; // minheap
     pq.push(10);   // 10
     pq.push(20);   // 10
     pq.push(25);   // 10

@@ -75,5 +75,5 @@ int main(){
     pq.display();
     pq.pop();
     cout<<pq.top()<<" "<<pq.size()<<endl;
-    pq.display();
+    pq.display();     
 }

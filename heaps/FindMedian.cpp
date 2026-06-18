@@ -1,4 +1,5 @@
-// leetcode-295 ( Find Median from Data Stream )
+// leetcode-295 ( Find Median from Data Stream ) 
+// hard
 
 #include<iostream>
 #include<queue>
